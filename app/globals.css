@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #fdf9f9;
+  --foreground: #2e1f27;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.glass-panel {
+  @apply backdrop-blur-xl bg-white/70 border border-white/50 shadow-soft rounded-3xl;
+}
+
+.card-hover {
+  @apply transition duration-500 ease-out hover:-translate-y-1 hover:shadow-glow;
+}
